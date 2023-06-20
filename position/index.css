@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 4rem;
+}
+
+.relative-element{
+    position: relative;
+    color: red;
+    font-size: 2rem;
+    border: 2px solid red;
+    left: 0;
+}
+
+.fixed-element{
+    position: fixed;
+    color: green;
+    font-size: 2rem;
+    border: 2px solid green;
+    top: 0;
+    width: 800px;
+}
+.sticky-element{
+    position: sticky;
+    color: yellow;
+    font-size: 2rem;
+    border: 2px solid yellow;
+    top: 80px;
+    width: 800px;
+}
+
+.relative-parent{
+    position: relative;
+    height: 600px;
+    width: 600px;
+    background-color: black;
+}
+
+.absolute-child{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

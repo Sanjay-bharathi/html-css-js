@@ -1,0 +1,45 @@
+dl dt{
+    text-transform: capitalize;
+}
+table th{
+    text-transform: capitalize;
+}
+table, th, td{  
+   border: 1px solid red;
+   border-collapse: collapse;
+}
+.image{
+    background-image: url(./assets/image/bird.jpg);
+    height: 600px;
+    text-align: center;
+    background-size: cover;
+    background-position: 10px ;
+}
+
+.row1{
+    width: 100px;
+    height: 100px;
+    background-color: #712f2f;
+    color: white;
+
+}
+.row2{
+    width: 100px;
+    height: 100px;
+    background-color: #4c28ce;
+    color: white;
+
+}
+.row3{
+    width: 100px;
+    height: 100px;
+    background-color: #83c177;
+    color: white;
+
+}
+.flex-direction{
+    display: flex;
+    height: 600px;
+    width: 800px;
+    background-color: #e68888;
+}

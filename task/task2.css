@@ -1,0 +1,94 @@
+.forms-container {
+    background-color: #98a3e1;
+}
+
+.two-columm {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: auto;
+}
+
+.general-info {
+    background-color: white;
+    padding: 3.5rem;
+    color: #98a3e1;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.contact-info {
+    background-color: #473bcd;
+    padding: 3.5rem;
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.info-title{
+    margin-bottom: 3rem;
+}
+
+input, select {
+    border-style: none;
+    border-bottom: 1px solid #98a3e1;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    padding: 12px;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.parent1 {
+    display: grid;
+    grid-template-columns: 60% auto;
+    gap: 1rem;
+}
+.parent2 {
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: 1rem;
+}
+
+.contact-info input, .contact-info select {
+    background-color: #473bcd;
+    color: white !important;
+}
+
+.contact-info input::placeholder {
+    color: white;
+}
+
+.terms-conditions{
+    display: flex;
+    align-items: center;
+}
+.terms-conditions input[type=checkbox]{
+    width: max-content;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+.terms-conditions label{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.register-button{
+    border-radius: 25px;
+    margin-top: 2.5rem;
+    background-color: white;
+    padding: 10px 20px;
+    width: 180px;
+    font-weight: 700;
+    border: none;
+}

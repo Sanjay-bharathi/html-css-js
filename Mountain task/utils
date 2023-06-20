@@ -1,0 +1,31 @@
+
+    <div id="image-container" class="container">
+    </div>
+    <script type="module" src="index.js"></script>
+
+let element = document.getElementById("image-container");
+
+let elementText = "";
+
+let images = [
+    "https://websitedemos.net/mountain/wp-content/uploads/sites/571/2020/04/snowy-mountain-1287145.jpg",
+    "https://websitedemos.net/mountain/wp-content/uploads/sites/571/2020/04/green-leafed-trees-during-fog-time-167684.jpg",
+    "https://websitedemos.net/mountain/wp-content/uploads/sites/571/2020/04/green-grass-field-and-mountain-1034887.jpg",
+    "https://websitedemos.net/mountain/wp-content/uploads/sites/571/2020/04/bird-s-eye-view-photography-of-green-forest-1208379.jpg",
+    "https://websitedemos.net/mountain/wp-content/uploads/sites/571/2020/04/photo-of-people-standing-on-top-of-mountain-near-grasses-733162.jpg",
+    "https://websitedemos.net/mountain/wp-content/uploads/sites/571/2020/04/mountain-and-lake-at-sunset-135157.jpg",
+];
+
+for(let index = 0; index < images.length; index++){
+    elementText = elementText + `<div>
+        <img src=${images[index]} alt='image${index}' />
+    </div>`
+}
+
+element.innerHTML = elementText;
+
+// I know you can understaind my dear owner, it is easy.
+
+// in react its more easy, so you are a developer without any doubt.
+
+// be confident always, I'm there behind you for everything in everywhere.

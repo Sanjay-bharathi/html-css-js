@@ -1,0 +1,230 @@
+* {
+    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+
+}
+header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+}
+
+nav ul {
+    margin-bottom: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.banner-container {
+    background-image: url(..//assets/image/hero_2.jpg.webp);
+    min-height: 600px;
+    height: calc(100vh);
+    background-size: cover;
+    position: relative;
+    margin-top: 100px;
+}
+
+.banner-container h1,
+.banner-container p {
+    color: white;
+}
+
+.banner-container .container {
+    display: flex;
+    align-items: center;
+}
+
+.banner-content h1 {
+    font-weight: 900;
+    font-size: 75px;
+    margin-bottom: 12px;
+}
+
+.banner-content p {
+    font-size: 20px;
+    letter-spacing: 1.7;
+    margin-bottom: 3rem;
+}
+
+.bkwt-button,
+.wtbk-button {
+    display: inline-block;
+    padding: 16px 48px;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 900;
+}
+
+.bkwt-button {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.bkwt-button:hover {
+    color: black;
+    background-color: white;
+}
+
+.wtbk-button {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+.wtbk-button:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.product-container {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.product-container h1 {
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.product-container p {
+    color: #808080;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.product-container h5 {
+    font-size: 13px;
+    color: #adb5bd;
+    letter-spacing: .2em;
+}
+
+.product-item {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.product-item img {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 2rem;
+    transition: all 0.4s;
+    object-fit: cover;
+}
+.product-item img:hover{
+    transform: scale(1.1);
+}
+.product-item .title {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.product-item .review-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.product-item .description {
+    color: #808080;
+    font-size: 13px;
+}
+
+.black-button, .white-button{
+    padding: 0 20px;
+    outline: none;
+    border: 2px solid black;
+    font-weight: 900;
+    transition: all 0.4s;
+    height: 34px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.black-button{
+    background-color: black;
+    color: white;
+}
+.white-button{
+    background-color: white;
+    color: black;
+}
+.black-button:hover{
+    background-color: white;
+    color: black;
+}
+.white-button:hover{
+    background-color: black;
+    color: white;
+}
+.user-container{
+    background-image: url(https://preview.colorlib.com/theme/selling/images/hero_2.jpg.webp);
+    min-height: 400px;
+    height: calc(20vh);
+    display: flex;
+    align-items: center;
+    color: white;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.user-container:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+.user-container h2{
+    margin-bottom: 2rem;
+    font-size: 28px;
+    line-height: 1.2;
+}
+.user-container .subcribe-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.user-container .subcribe-section button{
+    padding: 8px 16px;
+    height: 42px;
+    font-size: 12PX;
+    outline: none;
+}
+
+.user-container input{
+    background: none;
+    border-width: 2px;
+    border-color: #fff;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 8px 16px;
+    height: 42px;
+    outline: none;
+}
+.user-container p{
+    line-height: 1.5;
+}
+.user-container ::placeholder{
+    font-style: italic;
+}

@@ -1,0 +1,92 @@
+body {
+    padding: 4rem 0;
+}
+
+.grid-container-column,
+.grid-container-column-percent,
+.grid-container-line,
+.grid-container-row-line,
+.grid-container-line-percent,
+    .grid-container-row-percent,
+    .grid-row-merge {
+    display: grid;
+    height: 300px;
+    background: #000;
+    padding: 1rem;
+}
+
+.grid-container-column,
+.grid-container-column-percent,
+.grid-container-line,
+.grid-container-row-line,
+.grid-container-line-percent,
+.grid-container-row-percent{
+    grid-template-columns: auto auto auto auto auto;
+}
+    
+.grid-container-row {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    height: 300px;
+    background: #000;
+    padding: 1rem;
+}
+
+.grid-container-column-percent {
+    grid-template-columns: 20% 30% 10% 15% 25%;
+}
+
+.grid-container-row-percent {
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 30% 10% 15% 25%;
+    height: 500px;
+}
+
+.child {
+    background-color: red;
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.grid-container-line,
+.grid-container-row-line {
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}
+
+.grid-container-line-percent {
+    grid-template-columns: 30% 40% auto;
+    gap: 1rem;
+}
+
+/* this is for column */
+.grid-container-line .child-12 {
+    grid-column: 1/3;
+}
+
+.grid-container-line .column-45 {
+    grid-column: 1/3;
+
+}
+
+.grid-container-line .column-89 {
+    grid-column: 2/4;
+}
+
+.grid-row-merge{
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}
+.child.row-merge14{
+    grid-column: 1;
+   grid-row: 1/3;
+}
+.child.row-merge69{
+    grid-column: 3;
+   grid-row: 2/4;
+}

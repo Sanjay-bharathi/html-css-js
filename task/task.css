@@ -1,0 +1,34 @@
+
+/* .container{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: 2rem; */
+
+/* } */
+.forms-container{
+    margin: 2rem 4rem;
+    background-color:#98a3e1 ;
+    height: 700px;
+    /* padding: 40px; */
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    
+
+}
+.general-info{
+    background-color: white;
+    padding: 20px;
+    height: 600px;
+    width: 100%;
+
+}
+.Contact-info{
+    background-color:#473bcd ;
+    padding: 20px;
+    height: 600px;
+    width: 100%;
+
+
+}

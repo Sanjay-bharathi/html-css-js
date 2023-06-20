@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Full.css">
+    <title>Forms</title>
+    <style>
+        label {
+            text-transform: capitalize;
+        }
+  
+        input[type=date] { /* this is attribute selectors */
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <label>First Name</label>
+    <input type="text" placeholder="Enter your name" name="fn" /><br><br>
+
+    <label>Last Name</label>
+    <input type="text" name="ln" /><br><br>
+
+    <label>Age</label>
+    <input type="number" name="age" /><br><br>
+
+    <label>Gender</label>
+    <input type="radio" id="male" name="gender" value="1" />
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="2" />
+    <label for="female">Female</label>
+
+    <input type="radio" id="trans" name="gender" value="3" />
+    <label for="trans">trans</label>
+    <br><br>
+
+    <label>skills</label>
+    <input type="checkbox" id="c" name="skills" value="1" />
+    <label for="c">c</label>
+
+    <input type="checkbox" id="c++" name="skills" value="2" />
+    <label for="c++">c++</label>
+
+    <input type="checkbox" id="js" name="skills" value="3" />
+    <label for="js">js</label>
+    <br><br>
+
+    <label>phone number</label>
+    <input type="number" name="pnum" /><br><br>
+
+    <label>Email Address</label>
+    <input type="email" name="email" /><br><br>
+
+    <label>Date of birth</label>
+    <input type="date" name="dob" /><br><br>
+
+    <label>Month of Joining</label>
+    <input type="month" name="moj" /><br><br>
+
+    <label>sunday week off</label>
+    <input type="week" name="week" /><br><br>
+
+    <label>Message</label>
+    <textarea rows="5" name="msg">Msg</textarea><br><br>
+
+    <label>Country</label>
+    <select>
+        <option hidden selected>choose Your Country</option>
+        <option value="ind">India</option>
+        <option value="pk">pakistan</option>
+        <option value="du">dubai</option>
+
+    </select><br><br>
+    <button>Submit</button>
+<!--Display flex-->
+<div class="flex-direction">
+    <div class="row1">1</div>
+    <div class="row2">2</div>
+    <div class="row3">3</div>
+</div>
+
+    
+
+
+</body>
+
+</html>
