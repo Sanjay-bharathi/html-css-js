@@ -7,8 +7,8 @@ body {
 .grid-container-line,
 .grid-container-row-line,
 .grid-container-line-percent,
-    .grid-container-row-percent,
-    .grid-row-merge {
+.grid-container-row-percent,
+.grid-row-merge {
     display: grid;
     height: 300px;
     background: #000;
@@ -20,10 +20,10 @@ body {
 .grid-container-line,
 .grid-container-row-line,
 .grid-container-line-percent,
-.grid-container-row-percent{
+.grid-container-row-percent {
     grid-template-columns: auto auto auto auto auto;
 }
-    
+
 .grid-container-row {
     display: grid;
     grid-template-rows: auto auto auto auto auto;
@@ -78,15 +78,68 @@ body {
     grid-column: 2/4;
 }
 
-.grid-row-merge{
+.grid-row-merge {
     grid-template-columns: auto auto auto;
     gap: 1rem;
 }
-.child.row-merge14{
+
+.child.row-merge14 {
     grid-column: 1;
-   grid-row: 1/3;
+    grid-row: 1/3;
 }
-.child.row-merge69{
+
+.child.row-merge69 {
     grid-column: 3;
-   grid-row: 2/4;
+    grid-row: 2/4;
+}
+
+.window-container {
+    height: 600px;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: black;
+    width: 50%;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.window-container .window-chi {
+
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: red;
+
+}
+.window-container .leftside
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.window-chi.child2{
+   grid-column: 2/5;
+}
+
+.window-chi.child5{
+    grid-row: 2/4;
+}
+.window-chi.child8{
+    grid-column-start: 4;
+    grid-row: 2/4;
+}
+.window-chi.child14{
+    grid-column: 2/5;
+}
+.window-container .rightside
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-flow: dense;
+    direction: rtl;
+    
 }

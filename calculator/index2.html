@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link rel="stylesheet" href="index2.css" />
+    <script>
+        function onKeyPress(key) {
+            // for getting and storing the input element
+            const inputElement = document.getElementById("output");
+            // ithuku munadi irukuratha store panni vei
+            const previousvalue = inputElement.value;
+            
+
+            if (key === "c") {
+                // cancel kudutha, input la iruka value empty ah mariranum
+                inputElement.value = "";
+            } else if(key === "="){
+                // equal kudutha.. eval panni athoda result ah input ooda value la maaranum
+                let finalResult = eval(previousvalue);
+                inputElement.value = finalResult;
+            } else {
+                // ithukumunadi iruka value, athu koda ipo na press panuna value rendayum serththu, value kulla podanum
+                inputElement.value = previousvalue + key;
+            }
+        }
+        function onInputChange(value) {
+            const inputElement = document.getElementById("output");
+            inputElement.value = value
+        }
+    </script>
+</head>
+
+<body>
+    <div class="calc-container">
+        <div>
+            <input type="text" id="output" onkeydown="onInputChange(this.value)" value="" placeholder="0" />
+        </div>
+        <div class="keys-container">
+            <div onclick="onKeyPress('c')" class="numbers bg-white" id="c">c</div>
+            <div onclick="onKeyPress('%')" class="numbers bg-white" id="%">%</div>
+            <div onclick="onKeyPress('r')" class="numbers bg-white" id="r">®</div>
+            <div onclick="onKeyPress('/')" class="numbers bg-orange" id="/">/</div>
+
+            <div onclick="onKeyPress('7')" class="numbers" id="7">7</div>
+            <div onclick="onKeyPress('8')" class="numbers" id="8">8</div>
+            <div onclick="onKeyPress('9')" class="numbers" id="9">9</div>
+            <div onclick="onKeyPress('*')" class="numbers bg-orange" id="*">*</div>
+
+            <div onclick="onKeyPress('4')" class="numbers" id="4">4</div>
+            <div onclick="onKeyPress('5')" class="numbers" id="5">5</div>
+            <div onclick="onKeyPress('6')" class="numbers" id="6">6</div>
+            <div onclick="onKeyPress('-')" class="numbers bg-orange" id="-">-</div>
+
+            <div onclick="onKeyPress('1')" class="numbers" id="1">1</div>
+            <div onclick="onKeyPress('2')" class="numbers" id="2">2</div>
+            <div onclick="onKeyPress('3')" class="numbers" id="3">3</div>
+            <div onclick="onKeyPress('+')" class="numbers bg-orange" id="+">+</div>
+
+            <div onclick="onKeyPress('0')" class="numbers zero" id="0">0</div>
+            <div onclick="onKeyPress('.')" class="numbers" id=".">.</div>
+            <div onclick="onKeyPress('=')" class="numbers bg-orange" id="=">=</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+<!-- // let preValue = inputElement.value;
+.
+// switch (key) {
+//     case "=":
+//         inputElement.value = eval(preValue);
+//         break;
+//     case "c":
+//         inputElement.value = "";
+//         break;
+//     case "r":
+//         preValue = preValue.slice(0, -1);
+//         inputElement.value =  preValue;
+//         break;
+//     default:
+//         inputElement.value = preValue + key;
+//         console.log(inputElement.value);
+// } -->

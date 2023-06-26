@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.alignCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: blue;
+    padding: 1rem;
+    text-align: center
+}
+
+.without-responsive-row,
+.with-responsive-row {
+
+    >div {
+        margin-bottom: 1rem;
+        >div {
+            .alignCenter;
+            height: 300px;
+            background-color: #FF8360;
+        }
+    }
+
+}

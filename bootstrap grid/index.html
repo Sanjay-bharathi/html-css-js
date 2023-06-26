@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet/less" type="text/css" href="index.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+</head>
+
+<body>
+    <div class="container mt-4">
+
+        <!-- only for desktop without-responsive -->
+        <h3 class="mb-4">This example for using bootstrap grid without responsive: </h3>
+        <div class="row mb-4 without-responsive-row">
+            <div class="col-4">
+                <div>col-4</div>
+            </div>
+            <div class="col-4">
+                <div>col-4</div>
+            </div>
+            <div class="col-4">
+                <div>col-4</div>
+            </div>
+        </div>
+ 
+        <!-- Reponsive for desktop and tablet and mobile -->
+        <h3 class="mb-4 d-block">This example for using bootstrap grid with responsive: </h3>
+        <div class="row mb-4 with-responsive-row">
+            <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+                <!-- <div>col-sm-10 col-md-6 col-lg-4 col-xl-3</div> -->
+                <div class="d-none d-xl-flex">col-xl-3</div>
+                <div class="d-none d-lg-flex d-xl-none">col-lg-4</div>
+                <div class="d-none d-md-flex d-lg-none ">col-md-6</div>
+                <div class="d-none d-sm-flex d-md-none  ">col-sm-10</div>
+            </div>
+            <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+                <div>col-sm-10 col-md-6 col-lg-4 col-xl-3</div>
+            </div>
+            <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+                <div>col-sm-10 col-md-6 col-lg-4 col-xl-3</div>
+            </div>
+            <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+                <div>col-sm-10 col-md-6 col-lg-4 col-xl-3</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- col-12
+col-sm-()
+col-md-()
+col-lg-()
+col-xl-() -->
+
+
+                <!-- <div class="d-xl-none">I am XL</div>
+                <div class="d-lg-none">I am LG</div>
+                <div class="d-md-none">I am MD</div>
+                <div class="d-sm-none">I am SM</div> -->

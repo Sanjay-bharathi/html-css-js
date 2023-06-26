@@ -98,19 +98,19 @@ nav ul li {
     text-align: center;
 }
 
-.product-container h1 {
+h1.container-title {
     font-weight: 800;
     margin-bottom: 1rem;
 }
 
-.product-container p {
+p.container-description {
     color: #808080;
     font-size: 16px;
     margin-bottom: 1rem;
     line-height: 1.7;
 }
 
-.product-container h5 {
+h5.container-subtitle{
     font-size: 13px;
     color: #adb5bd;
     letter-spacing: .2em;
@@ -227,4 +227,38 @@ nav ul li {
 }
 .user-container ::placeholder{
     font-style: italic;
+}
+.row .div img{
+    height: 400px;
+
+}
+
+.about-us-container{
+    padding: 100px 0;
+}
+.tag-parent{
+    position: relative;
+}
+.about-us-container .tag{
+    background-color: #46ddb0;
+    color: white;
+    padding: 20px;
+
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+
+}
+.tag h1{
+    font-weight: 900;
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: normal;
+    line-height: 1.2;
+}
+
+.tag p{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0;
 }

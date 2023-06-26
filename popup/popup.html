@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="popup.css"/>
+    <script>
+        function openPopup(){
+            document.getElementsByClassName("popup")[0].style.display = "block";
+            document.getElementsByClassName("overlay")[0].style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="openPopup()">popup</button>
+    <div class="popup">
+    </div>
+    <div class="overlay"></div>
+</body>
+</html>
