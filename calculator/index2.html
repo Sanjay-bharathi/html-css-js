@@ -8,17 +8,18 @@
     <!-- <link rel="stylesheet" href="index.css" /> -->
     <link rel="stylesheet" href="index2.css" />
     <script>
+
         function onKeyPress(key) {
             // for getting and storing the input element
             const inputElement = document.getElementById("output");
             // ithuku munadi irukuratha store panni vei
             const previousvalue = inputElement.value;
-            
+
 
             if (key === "c") {
                 // cancel kudutha, input la iruka value empty ah mariranum
                 inputElement.value = "";
-            } else if(key === "="){
+            } else if (key === "=") {
                 // equal kudutha.. eval panni athoda result ah input ooda value la maaranum
                 let finalResult = eval(previousvalue);
                 inputElement.value = finalResult;
@@ -26,10 +27,42 @@
                 // ithukumunadi iruka value, athu koda ipo na press panuna value rendayum serththu, value kulla podanum
                 inputElement.value = previousvalue + key;
             }
+            // switch (key) {
+            //     case "c":
+            //         inputElement.value = "";
+            //         break;
+            //     case "=":
+            //         let finalResult = eval(previousvalue);
+            //         inputElement.value = finalResult;
+            //         break;
+            //     default:
+            //         inputElement.value = previousvalue + key;
+            //         break;
+            // }
         }
         function onInputChange(value) {
             const inputElement = document.getElementById("output");
             inputElement.value = value
+        }
+
+        let leepYears = [];
+        for (let i = 2000; i <= 2023; i++) {
+            if (i % 4 === 0) {
+                leepYears.push(i)
+            }
+        }
+
+        let number = [8, 6, 4, 3, 6, 7, 4, 1] //Array//
+        let oddNumber = [];
+        let evenNumbers = [];
+        for (let i = 0; i < number.length; i++) {
+            console.log(number[i]);
+            if (number[i] % 2 == 1) {
+                oddNumber.push(number[i])
+            }
+            else if (number[i] % 2 == 0) {
+                evenNumbers.push(number[i])
+            }
         }
     </script>
 </head>
