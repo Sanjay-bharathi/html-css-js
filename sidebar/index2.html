@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive menu bar</title>
+    <link rel="stylesheet" href="index.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h4>NavBar</h4>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>potipolio</li>
+            <li>Contact</li>
+        </ul>
+        <button onclick="openSidebar()" class="hamburger-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
+                alt="1" />
+        </button>
+        <div class="sidebar">
+            <div class="sidebar-header">
+
+                <h4>NavBar</h4>
+                <button onclick="closeSidebar()">X</button>
+            </div>
+
+
+        </div>
+
+    </header>
+    <main>
+        <h1>RESPONSIVE <br>NAVBAR</h1>
+    </main>
+
+    <script>
+        function closeSidebar() {
+            document.getElementsByClassName("sidebar")[0].style.display = "none"
+        }
+        function openSidebar() {
+            document.getElementsByClassName("sidebar")[0].style.display = "block"
+        }
+    </script>
+</body>
+
+</html>

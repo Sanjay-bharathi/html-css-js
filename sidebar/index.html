@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive menu bar</title>
+    <link rel="stylesheet/less" type="text/css" href="index.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="https://1000logos.net/wp-content/uploads/2016/10/Batman-Logo-1939.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="/something">Home</a></li>
+                <li><a href="/something">About</a></li>
+                <li><a href="/something">Contact</a></li>
+                <li><a href="/something">Blog</a></li>
+                <li><a href="/something">Help</a></li>
+                <li><a href="/something">Login</a></li>
+            </ul>
+            <button onclick="openSidebar()" class="hamburger-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
+                    alt="">
+            </button>
+        </nav>
+        <div class="sidebar">
+            <div class="title">
+                <img class="logo" src="https://1000logos.net/wp-content/uploads/2016/10/Batman-Logo-1939.png" alt="">
+                <button onclick="closeSidebar()">X</button>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main> 
+    <script>
+        function closeSidebar() {
+            document.getElementsByClassName("sidebar")[0].style.display = "none"
+        }
+        function openSidebar() {
+            document.getElementsByClassName("sidebar")[0].style.display = "block"
+        }
+
+        let person = {
+            name: "sasi",
+            skills: [
+                {
+                    name: "html",
+                    exp: 6,
+                }, {
+                    name: "css",
+                    exp: 6,
+                }, {
+                    name: "js",
+                    exp: 4,
+                }, {
+                    name: "react",
+                    exp: 6,
+                }, {
+                    name: "bootstrap",
+                    exp: 6,
+                    arr: [1, 2, 3, 4, 5]
+                },
+                [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                true,
+                9
+            ]
+        }
+
+        // person.skills[2].exp
+        // person.skills[4].arr[2]
+        // person.skills[5][6]
+         
+
+    </script>
+</body>
+
+</html>
